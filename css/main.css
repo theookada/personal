@@ -296,6 +296,7 @@ main .card h2 {
 
 #service p {
   margin-top: 0;
+  text-align: center;
 }
 
 #service h1 {
@@ -465,21 +466,54 @@ main .card h2 {
   }
 
   /*---Tablet Services Page Styles---*/
-  #service h1 {
-    width: 50%;
-  }
 
-  #service h2 {
-    justify-content: flex-start;
-    margin-left: 1em;
-  }
 
 }
 
 /* === DESKTOP STYLES - 1400px === */
 @media only screen and (min-width: 1400px) {
 
-  
+  /*---Desktop Header Styles---*/
+  header .header-content {
+    width: 60%;
+  }
+
+  header img {
+    max-height: 130px;
+    margin-bottom: 3em;
+  }
+
+  /*---Desktop Footer Styles---*/
+  footer .footer-content {
+    width: 60%;
+  }
+
+  footer .footer-content section {
+    width: 50%;
+  }
+
+  /*---Desktop Main Styles---*/
+  main .main-content {
+    width: 60%;
+  }
+
+  main .card {
+    width: 30%;
+  }
+
+  /*--- Desktop Service Page Styles ---*/
+  #service p {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  #service section {
+    justify-content: flex-start;
+  }
+
+  #service h2 {
+    margin-left: 2em;
+  }
 
 }
 
