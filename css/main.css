@@ -97,12 +97,13 @@ h1, h2, h3, li, a {
 
 ul li {
   list-style: none;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 nav a {
   color: #000000;
   text-decoration: none;
+  font-size: 1.2em;
 }
 
 p {
@@ -123,6 +124,7 @@ header {
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 header .content-wrapper {
@@ -133,12 +135,15 @@ header .content-wrapper {
   width: 95%;
 }
 
+header figure {
+  margin: 1em 0;
+}
+
 header img {
-  width: 95%;
+  width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
-  min-width: 400px;
 }
 
 header nav {
@@ -202,7 +207,7 @@ footer ul li {
   font-size: 2em;
 }
 
-footer h3,
+footer h1,
 footer p {
   color: #f0f2f2;
   text-decoration: none;
@@ -254,10 +259,16 @@ main .content-wrapper {
 main section h1 {
   width: 100%;
   margin: 0.6em 0;
+  display: flex;
+  justify-content: center;
 }
 
-main section h2 {
+main section ul {
+  padding: 0;
+  margin: 0;
   width: 100%;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 main .div-line2 {
@@ -265,6 +276,33 @@ main .div-line2 {
   width: 100%;
 }
 
+main .card {
+  width: 100%;
+  background-color: #f0f2f2;
+  margin: 0.3em;
+}
+
+main .card figure img {
+  width: 100%;
+  height: auto;
+}
+
+main .card h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*---Mobile Services Main Styles---*/
+
+#service p {
+  margin-top: 0;
+}
+
+#service h1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 /* ==========================================================================
@@ -349,15 +387,100 @@ main .div-line2 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/* === TABLET STYLES - 768px === */
+   @media only screen and (min-width: 768px) {
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  /*---Tablet Header Styles---*/
+  .header-content {
+    width: 80%;
+  }
+
+  header img {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+  }
+
+  /*---Tablet Footer Styles---*/
+  footer .content-wrapper {
+    justify-content: center;
+  }
+
+  footer .footer-content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content section {
+    flex-flow: row wrap;
+  }
+
+  footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+  }
+
+  footer ul {
+    width: 80%;
+  }
+
+  /*---Tablet Main Styles---*/
+  main .main-content {
+    width: 90%;
+    margin: 3em 0;
+  }
+
+  main .gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  main .card {
+    width: 48%;
+  }
+
+  main .card figure {
+    margin: 0;
+  }
+
+  main .card figure img {
+    width: 100%;
+  }
+
+  /*---Tablet Services Page Styles---*/
+  #service h1 {
+    width: 50%;
+  }
+
+  #service h2 {
+    justify-content: flex-start;
+    margin-left: 1em;
+  }
+
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* === DESKTOP STYLES - 1400px === */
+@media only screen and (min-width: 1400px) {
+
+  
+
 }
 
 /* ==========================================================================
