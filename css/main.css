@@ -519,6 +519,10 @@ main .card h2 {
     width: 60%;
   }
 
+  .main-content .intro li {
+    font-size: 1.3em;
+  }
+
   main .card {
     width: 30%;
   }
