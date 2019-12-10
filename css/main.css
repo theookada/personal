@@ -170,8 +170,7 @@ footer {
 
 footer .content-wrapper {
   display: flex;
-  width: 95%;
-  padding: 1em 0;
+  width: 90%;
 }
 
 .footer-content {
@@ -182,7 +181,7 @@ footer .content-wrapper {
 
 .footer-content section {
   width: 100%;
-  margin: 1.5em 0;
+  margin: 1em 0;
 }
 
 footer .div-line1 {
@@ -240,13 +239,14 @@ main {
 main .content-wrapper {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 90%;
 }
 
 .main-content {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  margin: 1em 0;
 }
 
 .main-content section {
@@ -265,10 +265,25 @@ main section h1 {
 
 main section ul {
   padding: 0;
-  margin: 0;
   width: 100%;
   font-weight: bold;
-  font-size: 1.2em;
+  text-align: right;
+}
+
+.main-content .intro {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.main-content .intro h1 {
+  border-right: 1px solid #000000;
+}
+
+.main-content .intro li {
+  font-size: 1em;
 }
 
 main .div-line2 {
@@ -301,8 +316,6 @@ main .card h2 {
 
 #service h1 {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 
@@ -442,8 +455,17 @@ main .card h2 {
 
   /*---Tablet Main Styles---*/
   main .main-content {
-    width: 90%;
+    width: 65%;
     margin: 3em 0;
+  }
+
+  .main-content .intro h1 {
+    border-right: none;
+  }
+
+  .intro ul {
+    border-left: 1px solid #000000;
+    text-align: center;
   }
 
   main .gallery {
