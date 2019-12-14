@@ -116,6 +116,15 @@ span {
   color: #29A68F;
 }
 
+main .card h2 {
+  font-size: 1.3em;
+}
+
+main .card p {
+  font-size: 1.1em;
+  padding: 0 0.3em;
+}
+
 /*---Mobile Header Styles---*/
 header {
   background: #f0f2f2;
