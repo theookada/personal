@@ -1217,7 +1217,7 @@ FileETag None
 # </IfModule>
 
 # ----------------------------------------------------------------------
-# | Filename-based cache busting                                       |
+# | Attempt to remove .html                                     |
 # ----------------------------------------------------------------------
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
