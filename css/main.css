@@ -316,6 +316,12 @@ main .card h2 {
   justify-content: center;
 }
 
+img.testpro {
+  max-width: 350px;
+  width:100%;
+  height:auto;
+}
+
 /*---Mobile Services Main Styles---*/
 
 #service p {
