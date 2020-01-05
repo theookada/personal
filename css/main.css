@@ -116,6 +116,11 @@ span {
   color: #29A68F;
 }
 
+.copyright{
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8em;
+}
+
 main .card h2 {
   font-size: 1.3em;
 }
@@ -448,9 +453,7 @@ img.testpro {
   }
 
   footer .footer-content {
-    width: 80%;
-    display: flex;
-    justify-content: center;
+    width: 70%;
   }
 
   .footer-content section {
@@ -522,11 +525,27 @@ img.testpro {
 
   /*---Desktop Footer Styles---*/
   footer .footer-content {
-    width: 60%;
+    align-items: flex-start;
+    flex-flow: row wrap;
   }
 
-  footer .footer-content section {
-    width: 50%;
+  footer .half-width {
+    width: 40%;
+  }
+
+  footer .full-width {
+    border-top: 1px solid #f0f2f2;
+    width: 100%;
+  }
+
+  footer ul {
+    width: 60%;
+    margin: 0.7em 0;
+  }
+
+  footer .div-line1 {
+    border-top: none;
+    width: 0;
   }
 
   /*---Desktop Main Styles---*/
